@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Just for Kicks</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#title").mouseover(function(){
+				alert("Welcome to Just For Kicks!");
+			});
+			$("#p1").click(function(){
+				$("#p1").hide();
+			});
+			$("#b1").click(function(){
+				$("h4").toggle();
+			});
+			$("#b2").click(function(){
+				$("#center").fadeToggle();
+			});
+			$("#b3").click(function(){
+				$("#center").animate({
+									opacity: '0.5',
+									height: '+=150px'
+									});
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+		<div id="header">
+			<a href="index.html"><img src="Soccer.png" id="headerpic"></a>
+			<h2 id="title">Welcome to Just for Kicks Sporting Goods</h2>
+			<ul id="navbar">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="order.php">Order</a></li>
+				<li><a href="orderinfo.php">Order Information</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a><button id="b2">Fade toggle</button></a></li>
+				<li><a><button id="b3">Animate</button></a></li>
+			</ul>
+		</div>
+		<div id="center">
+			<h2 id="p1">Welcome to our main page!!</h2>
+			click to toggle the following paragraph.
+			<button id="b1">Click me!</button>
+			<h4>
+				We are your go to place for every thing soccer related.</p>
+				We started only a few years ago with the hope of spreading the joy of soccer.
+				
+			</h4>
+		</div>
+		<div id="bottom">
+			<a href="contact.html"><h2>Contact Us!</h2></a></br>
+			(169)124-9234
+		</div>
+	</body>
+</html>
